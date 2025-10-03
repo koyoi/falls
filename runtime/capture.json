@@ -1,0 +1,16 @@
+{
+  "version": "1.0",
+  "capture": {
+    "type": "image",
+    "w": 1280,
+    "h": 720,
+    "fps": 60,
+    "dur_sec": 0.0,
+    "output": "frame.png"
+  },
+  "watermark": {
+    "text": "@falls",
+    "pos": "br"
+  },
+  "seed": 123456
+}

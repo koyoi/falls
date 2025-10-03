@@ -1,0 +1,66 @@
+{
+  "version": "1.0",
+  "name": "default_sandfall",
+  "emitter": {
+    "rate_per_sec": 1200,
+    "burst": {
+      "interval_sec": 0,
+      "count": 0
+    },
+    "spawn_band": {
+      "y": 0.05,
+      "height": 0.02
+    },
+    "random_seed": 1
+  },
+  "appearance": {
+    "palette": [
+      "#fbeed7",
+      "#f5d1a3",
+      "#f9c784"
+    ],
+    "size_px": {
+      "min": 3,
+      "max": 8
+    },
+    "sprite": ""
+  },
+  "motion": {
+    "drag": 0.08,
+    "sway": {
+      "amp": 18.0,
+      "freq": 0.8
+    },
+    "spin": {
+      "deg_per_sec": 35.0
+    },
+    "gravity": 360.0,
+    "glide": {
+      "lift": 0.1
+    }
+  },
+  "accumulation": {
+    "enabled": true,
+    "mode": "heightmap",
+    "max_height_px": 160,
+    "diffusion": 0.05
+  },
+  "obstacle": {
+    "stickiness": 0.25
+  },
+  "fx": {
+    "bloom": 0.15,
+    "background": {
+      "gradient": [
+        "#0a101a",
+        "#1a2a3a"
+      ],
+      "cycle_by_clock": false
+    }
+  },
+  "targets": {
+    "fps": 60,
+    "internal_scale": 1.0
+  },
+  "notes": "Default falling sand preset for bootstrapping."
+}

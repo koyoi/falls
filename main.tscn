@@ -1,0 +1,30 @@
+[gd_scene load_steps=3 format=3 uid="uid://dxjhky71x8y33"]
+
+[ext_resource type="Script" path="res://scripts/simulation_director.gd" id="1_35x41"]
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleMaterial_ris5g"]
+emission_shape = 0
+lifetime = 4.0
+explosiveness = 0.0
+preprocess = 1.0
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_35x41")
+
+[node name="Background" type="ColorRect" parent="."]
+color = Color(0.0352941, 0.0509804, 0.0784314, 1)
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="ParticleEmitter" type="ParticleProcess2D" parent="."]
+position = Vector2(640, 360)
+process_material = SubResource("ParticleMaterial_ris5g")
+emitting = true
+amount = 1024
+
+[node name="ForceField" type="Node2D" parent="."]
+
+[node name="SequenceTimer" type="Timer" parent="."]
+process_mode = 1
+wait_time = 0.5
+one_shot = false
