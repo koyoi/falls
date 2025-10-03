@@ -1,0 +1,11 @@
+{
+  "version": "1.0",
+  "timeline": [
+    {"t": 0.0, "type": "wind", "dir_deg": 180.0, "speed": 60.0},
+    {"t": 20.0, "type": "gust", "dir_deg": 160.0, "speed": 120.0, "dur": 5.0},
+    {"t": 40.0, "type": "calm", "speed": 0.0}
+  ],
+  "texture": {
+    "use_prebaked": false
+  }
+}

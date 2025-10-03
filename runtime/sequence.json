@@ -1,0 +1,8 @@
+{
+  "version": "1.0",
+  "loop": true,
+  "tracks": [
+    {"t": 0.0, "apply": {"preset": "preset.json", "force": "forcefield.json"}},
+    {"t": 30.0, "apply": {"force": "forcefield.json"}}
+  ]
+}
